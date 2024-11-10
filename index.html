@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Analytics</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <p>hello test page</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <script>
+    // Alloy AEP Web SDK script
+    !function (n, o) {
+      o.forEach(function (o) {
+        n[o] || ((n.__alloyNS = n.__alloyNS ||
+          []).push(o), n[o] = function () {
+            var u = arguments; return new Promise(
+              function (i, l) { n.setTimeout(function () { n[o].q.push([i, l, u]) }) })
+          }, n[o].q = [])
+      })
+    }
+      (window, ["alloy"]);
+  </script>
+  <script src="https://cdn1.adoberesources.net/alloy/2.19.1/alloy.min.js" async></script>
+  <script src="https://assets.adobedtm.com/0e9a0418089e/503ee94fe214/launch-a5d129d86977-development.min.js"
+    async></script>
+
+</head>
+
+<body>
+  <p>hello test page</p>
+</body>
+
 </html>
